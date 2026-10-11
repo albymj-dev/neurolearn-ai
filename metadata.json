@@ -1,0 +1,6 @@
+{
+  "name": "NeuroLearn AI",
+  "description": "Assistive learning workspace for neurodivergent students.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

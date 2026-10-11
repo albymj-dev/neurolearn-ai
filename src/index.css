@@ -1,0 +1,42 @@
+@import "./fonts/opendyslexic.css";
+@import "tailwindcss";
+
+/* OpenDyslexic High-Legibility Accessibility Font */
+.font-dyslexic,
+.font-dyslexic p,
+.font-dyslexic span,
+.font-dyslexic strong,
+.font-dyslexic b,
+.font-dyslexic div:not(header *):not(.ui-chrome *),
+.font-dyslexic textarea,
+.font-dyslexic h1,
+.font-dyslexic h2,
+.font-dyslexic h3,
+.font-dyslexic h4,
+.font-dyslexic label,
+.font-dyslexic li {
+  font-family: 'OpenDyslexic', sans-serif !important;
+}
+
+/* Ensure UI chrome (header, navigation controls, system badges) remains rock-solid in standard sans and NEVER jumps */
+header,
+header *,
+.ui-chrome,
+.ui-chrome * {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}
+
+/* Fix OpenDyslexic bottom-heavy baseline offset to prevent text from hugging top borders */
+.font-dyslexic p,
+.font-dyslexic span,
+.font-dyslexic textarea {
+  line-height: 1.65;
+}
+
+/* Keep buttons inside dyslexic containers vertically centered */
+.font-dyslexic button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
